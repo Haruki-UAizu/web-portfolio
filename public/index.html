@@ -7,6 +7,10 @@
     <meta name = "robots" content = "noindex" />
     <title>My Portfolio</title>
     <link rel = "stylesheet" href = "./assets/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class = "page-cover bg-3 text-dark">
@@ -60,10 +64,10 @@
                 style="display: flex; gap: 0.5em; align-items: center"
               >
                 <img src="./assets/icons/email.svg" alt="Email のアイコン" />
-                <span>su-yumi-public [at] email.example.com</span>
+                <span>s1280083 [at] u-aizu.ac.jp</span>
               </div>
 
-              <div>テックセレクト大学 情報工学部 情報工学科 3 年生</div>
+              <div>会津大学 コンピュータ理工学部 コンピュータ理工学科 3年生</div>
             </div>
           </dix>
         </div>
@@ -71,19 +75,48 @@
         <div class="card-contents">
           <span class="card-basic-info-label bg-2 text-light">自己紹介</span>
           <p>
-            　はじめまして、須賀 優美
-            といいます。このサイトは、私の趣味やスキルなどを紹介するポートフォリオです。
-            このポートフォリオが、Web の
-            初めての制作物です。どうぞご覧ください。
+            　はじめまして。植田陽樹と申します。このサイトは私の趣味やスキルなどに関するポートフォリオです。<br>
+            このポートフォリオがWeb上での初めての制作物です。どうぞご覧ください。
           </p>
-          <span class="card-basic-info-label bg-2 text-light">重要</span>
-          <p>
-            　このページは Web 制作の学習のためのページです。
-            掲載されている情報はすべて架空の設定であり、実際とは異なります。
-            また、プロフィール画像は
-            <a href="https://www.photo-ac.com/">写真AC</a> の AI Generator
-            で生成した架空の人物です。
-          </p>
+        </div>
+      </div>
+
+      <div style="height: 20px"></div>
+
+      <div class="card-cover bg-white">
+        <h2 class="card-title-cover bg-2 text-light">
+          <div class="card-title">Hobby</div>
+          <div class="card-subtitle">趣味</div>
+          <div class="card-title-line"></div>
+        </h2>
+        <div class="card-contents">
+          　旅行と写真を取ることが趣味です。スマートフォンで気軽に撮影したものです。
+          パノラマ撮影が気に入っています。
+        </div>
+        <div
+          class="swiper-area"
+          style="
+            --swiper-navigation-color: #fff;
+            --swiper-pagination-color: #fff;
+          "
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-title">静岡県 熱海市 熱海城前</div>
+              <img src="./assets/photos/1.jpg" alt="静岡県 熱海市 熱海城前" />
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-title">夕方の大学</div>
+              <img
+                src="./assets/photos/2.jpg"
+                alt="夕方の大学"
+                style="width: auto"
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
 
@@ -96,5 +129,24 @@
         <div class="footer-contents">&copy; 2022 Haruki Ueta.</div>
       </footer>
     </div>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        direction: "vertical",
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
   </body>
 </html>
