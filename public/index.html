@@ -10,7 +10,8 @@
   </head>
   <body>
     <div class = "page-cover bg-3 text-dark">
-      <img
+
+      <!-- <img
         src = "./assets/decorations/lt.svg"
         alt = "Background Image 1"
         class = "page-bg-icon page-bg-icon-lt"
@@ -19,11 +20,77 @@
         src = "./assets/decorations/rb.svg"
         alt = "Background Image 2"
         class = "page-bg-icon page-bg-icon-rb"
-      />
+      /> -->
+
+      <!-- Title -->
       <h1 class = "page-title text-1">Haruki's Portfolio</h1>
 
-      <div style = "height: 40px"></div>
+      <!-- Cards -->
+      <div class="card-cover bg-white">
+        <h2 class="card-title-cover bg-2 text-light">
+          <div class="card-title">Title of Card</div>
+          <div class="card-subtitle">表題</div>
+          <div class="card-title-line"></div>
+        </h2>
+        <div class="card-contents">Contents in the Card.</div>
+      </div>
 
+      
+      <div class="card-cover bg-white">
+        <h2 class="card-title-cover bg-2 text-light">
+          <div class="card-title">Self Introduction</div>
+          <div class="card-subtitle">自己紹介</div>
+          <div class="card-title-line"></div>
+        </h2>
+        <div class="card-contents">
+          <dix class="card-basic-info-layout">
+            <div>
+              <img src="./assets/me.png" alt="Face" class = "my-photo" />
+            </div>
+            <div style="flex-grow: 1">
+              <div style="display: flex; gap: 1em; align-items: flex-end">
+                <h3 style="margin: 0; font-size: 2rem">植田 陽樹</h3>
+                <span style="padding-bottom: 4px">うえた はるき</span>
+              </div>
+              <div class="bg-2" style="height: 2px"></div>
+              <div class="text-2" style="font-size: 0.95rem">Haruki UETA</div>
+
+              <div
+                class="text-1"
+                style="display: flex; gap: 0.5em; align-items: center"
+              >
+                <img src="./assets/icons/email.svg" alt="Email のアイコン" />
+                <span>su-yumi-public [at] email.example.com</span>
+              </div>
+
+              <div>テックセレクト大学 情報工学部 情報工学科 3 年生</div>
+            </div>
+          </dix>
+        </div>
+        
+        <div class="card-contents">
+          <span class="card-basic-info-label bg-2 text-light">自己紹介</span>
+          <p>
+            　はじめまして、須賀 優美
+            といいます。このサイトは、私の趣味やスキルなどを紹介するポートフォリオです。
+            このポートフォリオが、Web の
+            初めての制作物です。どうぞご覧ください。
+          </p>
+          <span class="card-basic-info-label bg-2 text-light">重要</span>
+          <p>
+            　このページは Web 制作の学習のためのページです。
+            掲載されている情報はすべて架空の設定であり、実際とは異なります。
+            また、プロフィール画像は
+            <a href="https://www.photo-ac.com/">写真AC</a> の AI Generator
+            で生成した架空の人物です。
+          </p>
+        </div>
+      </div>
+
+      <!-- End of Cards -->
+
+
+      <!-- Footer -->
       <footer class = "footer-cover bg-2 text-light">
         <div style = "height: 4px; background-color: rgba(0, 0, 0, 0.1);"></div>
         <div class="footer-contents">&copy; 2022 Haruki Ueta.</div>
